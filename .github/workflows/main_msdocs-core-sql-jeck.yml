@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - msdocs-core-sql-Jeck
+name: Build and deploy ASP.Net Core app to Azure Web App - msdocs-core-sql-jeck
 
 on:
   push:
@@ -54,15 +54,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E2B1A47964D148FC8E6735E307F5B85D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3073E5946495480FACAEC5D21ECE2E2F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D000A2385AD241EDBDD1BA4ACA429134 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B2FF2DB2368748A7AD6D8E04E18D4A7F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4CBF6865BC3F4C719B57B351B8E3650C }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_00F8D773DEFF45BCBEDA66F4FEF6BBA7 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'msdocs-core-sql-Jeck'
+          app-name: 'msdocs-core-sql-jeck'
           slot-name: 'Production'
           package: .
           
